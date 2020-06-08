@@ -10,6 +10,19 @@
 
   </head>
 
+  <script>
+
+   function reqListener () {
+     console.log(this.responseText);
+   }
+
+   var oReq = new XMLHttpRequest();
+   oReq.onload = reqListener;
+   oReq.open("get", "yourFile.txt", true);
+   oReq.send();
+
+  </script>
+
   <body>
     <h1>Hello !!!!</h1>
     <script type='text/javascript'> !function(){var e=function(){overtokCreate('AQICAHhCcM5W/H29kkiOep7oCK8zHLoTIvgfxhsP+G4fnizY+QGOWXMGwIOY2933RPLhZMl/AAAAwDCBvQYJKoZIhvcNAQcGoIGvMIGsAgEAMIGmBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDDVO3BMzqG4dF4ay8wIBEIB5uplJcKWGajvJd8fKFd45NwiAfMURtDtPxXetnAn98L+4+HLJoLRJ1u0sjIboqxt8gzSkbJSFIuyLcbNkzoxTLo1oPmAOxXzPbx+I8n43WYypbJq935sM8OQLEEO6WJ3vjeEPSgecCaLf8MOGkAbn0D47pt54EyI/wA==','fastlane','a02707880b5b4dc9bea395ecd9c6025a' ,{})},t=document.createElement('script');t.type='text/javascript',t.src='https://assets.overtok-qa.com/web-sdk/overtok.js' ,t.onreadystatechange=e,t.onload=e,document.getElementsByTagName('head')[0].appendChild(t)}(); </script>
